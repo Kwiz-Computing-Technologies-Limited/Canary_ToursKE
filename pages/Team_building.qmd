@@ -1,0 +1,38 @@
+---
+title: "Team Building"
+description: "Team Building with CANARY TOURS.KE"
+output: 
+  html_document:
+    theme: united
+    highlight: tango
+    toc: true
+    toc_float: true
+---
+
+```{r setup, echo=FALSE}
+# don't show code chunks in output document 
+knitr::opts_chunk$set(echo = TRUE)
+
+# install and load dependencies
+dependencies = function(pkg) {
+  if(! pkg %in% utils::installed.packages()) {
+    utils::install.packages(pkg)
+    library(pkg, character.only = TRUE)
+  } else {
+    library(pkg, character.only = TRUE)
+  }
+}
+
+# renv::snapshot() # update lockfile
+dependencies("shiny")
+```
+
+```{r, team_building_page_content, echo=FALSE}
+# Ad Posters
+# Activity details
+# Contacts
+# Links to social media
+# Prices
+# Booking section i.e a form linked to a database (googlesheet)
+# Ratings section 
+```
