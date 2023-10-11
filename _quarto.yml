@@ -4,12 +4,34 @@ project:
 website:
   title: "CANARY TOURS.KE"
   description: "A tours and travel agency offering team activities and hotel bookings"
+  back-to-top-navigation: true
+  
+  search: 
+    location: navbar
+    type: textbox
+  
+  page-footer: 
+    left: "Created by: Kwiz Computing Technologies Limited" 
+    right: "Copyright: Canary Tours.ke (2023)"
+    center: 
+      - icon: github
+        href: https://github.com/
+      - icon: twitter 
+        href: https://twitter.com/ 
+      - icon: instagram
+        href: https://instagram.com/
+      - icon: tiktok
+        href: https://tiktok.com/
+      - icon: facebook
+        href: https://facebook.com/
+      - icon: whatsapp
+        href: https://whatsapp.com/
 
   navbar:
     left:
       - text: "Home"
         href: index.html
-      - text: "Services"
+      - text: "Deals!"
         menu:
           - text: "Game drives"
             href: pages/game_drives.html
@@ -37,8 +59,6 @@ website:
             href: pages/Festival_Events.html
           - text: "Hiking & Trekking"
             href: pages/Hiking_Trekking.html
-          - text: "Deals"
-            href: pages/Deals.html
           
           # Add more services here...
       - text: "Hotel bookings"
@@ -51,6 +71,7 @@ website:
 
 format:
   html:
+    page-layout: full
     css: styles.css
     toc: true
     theme: united

@@ -1,5 +1,6 @@
 ---
-title: "CANARY TOURS.KE"
+title: "CANARY TOURS"
+description: "An Eco tour agency,leading in adventure and travel"
 ---
 
 ```{r setup, echo=FALSE}
@@ -19,6 +20,31 @@ dependencies = function(pkg) {
 # renv::snapshot() # update lockfile
 dependencies("shiny")
 ```
+
+
+::: {.grid}
+
+::: {.g-col-12}
+/*Add dynamic img/banner here*
+:::
+
+::: {.g-col-12}
+## Our Mision:
+
+**Turning every moment into a lifetime memory**
+:::
+
+::: {.g-col-12}
+## Our Vision
+
+**Taking adventure to another level**
+:::
+
+:::
+
+
+
+
 
 ```{r, home_page_content, echo=FALSE}
 # Ad Posters
