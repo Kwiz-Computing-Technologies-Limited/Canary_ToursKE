@@ -1,6 +1,6 @@
 ---
 title: "CANARY TOURS"
-description: "An Eco tour agency,leading in adventure and travel"
+description: ""
 ---
 
 ```{r setup, echo=FALSE}
@@ -21,11 +21,19 @@ dependencies = function(pkg) {
 dependencies("shiny")
 ```
 
+<div class="game_drives_description" style="font-size:30px; text-align: center; align-items: center;">
+
+An Eco tour agency,leading in adventure and travel 
+
+</div>
+
 
 ::: {.grid}
 
 ::: {.g-col-12}
-/*Add dynamic img/banner here*
+<center>
+    ![Find places where your dollars go the farthest and tips to create amazing travel experiences without breaking the bank. Travel more and spend less!](./pages/images/image5.jpg){#fig-home_img_1 fig-align="center"}
+</center>
 :::
 
 ::: {.g-col-12}

@@ -1,6 +1,6 @@
 ---
 title: "Game drives"
-description: "Experience the thrill of a game drive with CANARY TOURS.KE"
+description: ""
 output: 
   html_document:
     theme: united
@@ -27,12 +27,31 @@ dependencies = function(pkg) {
 dependencies("shiny")
 ```
 
-```{r, game_drive_page_content, echo=FALSE}
-# Ad Posters
-# Activity details
-# Contacts
-# Links to social media
-# Prices
-# Booking section i.e a form linked to a database (googlesheet)
-# Ratings section 
-```
+:::{.grid}
+
+::: {.g-col-12}
+<div class="game_drives_description" style="font-size:30px; text-align: center; align-items: center;">
+
+Experience the thrill of a game drive with CANARY TOURS.KE 
+
+</div>
+:::
+
+::: {.g-col-8}
+<center>
+  ![](./images/image4.jpg)
+</center>
+:::
+
+::: {.g-col-4}
+
+<div class="game_drives" style="font-size:25px; text-align: center; align-items: center; margin-top: 40%"> 
+
+As the sun rises over the vast plains, game drive enthusiasts embark on their safari vehicles, accompanied by experienced guides and trackers. The open-sided 4x4 vehicles provide an unobstructed view of the surrounding landscapes, ensuring that every moment is captured, from the majestic elephants grazing in the distance to the elusive big cats prowling through the grass 
+
+</div>
+
+:::
+
+:::
+

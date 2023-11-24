@@ -6,6 +6,10 @@ website:
   description: "A tours and travel agency offering team activities and hotel bookings"
   back-to-top-navigation: true
   
+  favicon: ./images/image1.jpg
+  twitter-card: true
+  site-url: https://canarytourske.onrender.com/
+  
   search: 
     location: navbar
     type: textbox
@@ -26,6 +30,8 @@ website:
         href: https://facebook.com/
       - icon: whatsapp
         href: https://chat.whatsapp.com/D6QKPzWip0HGCPf8P3Z5Yb
+      - icon: email
+      
 
   navbar:
     left:
@@ -74,7 +80,11 @@ format:
     page-layout: full
     css: styles.css
     toc: true
-    theme: united
+    theme: 
+      light: united
+      dark: darkly
+
+
     highlight: tango
     toc_float: true
     
