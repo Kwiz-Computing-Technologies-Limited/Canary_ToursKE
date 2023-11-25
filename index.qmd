@@ -27,7 +27,7 @@ library(bslib)
   }
 
   .title {
-    color: grey;
+    color: grey90;
     font-size: 30px;
   }
   
@@ -92,7 +92,8 @@ tags$style("
   /* Style the card header */
   .card-header {
     padding: 10px;
-    background-color: white;
+    background-color: black;
+    color: white;
     text-align: center;
     font-family: arial;
     font-size: 30px;
@@ -108,7 +109,7 @@ tags$style("
 
   /* Style the card text */
   .card-text {
-    color: grey;
+    color: grey90;
     font-size: 30px;
   }
   
@@ -145,7 +146,7 @@ tags$style("
     max-left: 205px;
     max-right: 200px;
     min-bottom: 100px;
-    color: grey;
+    color: grey90;
     font-size: 30px;
     background-color: white;
   }

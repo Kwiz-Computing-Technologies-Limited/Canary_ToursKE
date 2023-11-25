@@ -40,13 +40,12 @@ website:
     right:
       - text: "Home"
         href: index.html
-          # Add more services here...
       - text: "Hotel bookings"
-        href: pages/hotel_bookings.html
+        href: pages/hotel_bookings.qmd
       - text: "Travel Magazine"
-        href: pages/travel_magazine.html
+        href: pages/travel_magazine.qmd
       - text: "About Us"
-        href: pages/about.html
+        href: pages/about.qmd
 
 
 format:
@@ -56,8 +55,8 @@ format:
     toc: true
     toc-location: right
     theme: 
-      light: morph
-      dark: solar
+      light: simplex
+      dark: darkly
 
 
     highlight: tango
