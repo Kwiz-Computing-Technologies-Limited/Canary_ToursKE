@@ -34,7 +34,7 @@ website:
       
 
   navbar:
-    logo: "./pages/images/logo.jpg"
+    logo: "./pages/images/logo.jpeg"
     logo-alt: "My Logo"
 
     right:

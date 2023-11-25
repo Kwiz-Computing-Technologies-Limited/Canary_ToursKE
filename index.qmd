@@ -148,7 +148,7 @@ tags$style("
     min-bottom: 100px;
     color: grey90;
     font-size: 30px;
-    background-color: white;
+    background-color: grey;
   }
 ")
 ```
