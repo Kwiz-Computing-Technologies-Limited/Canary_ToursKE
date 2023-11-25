@@ -39,7 +39,7 @@ library(bslib)
 
   a {
     text-decoration: none;
-    font-size: 22px;
+    font-size: 30px;
     color: white;
   }
 
