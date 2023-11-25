@@ -4,6 +4,14 @@ site:
   theme: quarto
 ---
 
+```{r libraries, echo=FALSE, message=FALSE, warning=FALSE}
+# Install and load the slickR package
+# install.packages("slickR")
+library(htmltools)
+library(slickR)
+library(bslib)
+```
+
 <style>
 
 /* Style the cards */
@@ -22,24 +30,17 @@ site:
     color: grey;
     font-size: 30px;
   }
-
-  button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
+  
+  h1 {
     font-size: 30px;
+    text-align: center;
   }
+
 
   a {
     text-decoration: none;
     font-size: 22px;
-    color: black;
+    color: white;
   }
 
   button:hover, a:hover {
@@ -63,47 +64,6 @@ _______________________________________________
     height: 300px;
   }
 
-  
-
-  /* Style the card header */
-  .card-header {
-    padding: 10px;
-    background-color: #f0f0f0;
-    text-align: center;
-    font-family: arial;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  /* Style the card image */
-  .card-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-
-  /* Style the card text */
-  .card-text {
-    padding: 10px;
-    font-family: arial;
-    font-size: 14px;
-  }
-
-  /* Style the buttons */
-  .button {
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    background-color: white;
-    color: black;
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
   .button-prev {
     left: 10px;
   }
@@ -113,118 +73,257 @@ _______________________________________________
   }
 </style>
 
+
+```{r styling, echo=FALSE, message=FALSE, warning=FALSE}
+# Add some custom CSS styling to the cards
+tags$style("
+  /* Style the card container */
+  .card {
+    box-shadow: 0px 4px 8px 0px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  /* Style the card header */
+  .card-header {
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  /* Style the card image */
+  .card-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* Style the card text */
+  .card-text {
+    color: grey;
+    font-size: 30px;
+  }
+  
+  /* Style button*/
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Container holding the image and the text */
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    object-fit: fill;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }
+
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    max-top: 100px;
+    max-left: 205px;
+    max-right: 200px;
+    min-bottom: 100px;
+    color: grey;
+    font-size: 30px;
+    background-color: white;
+  }
+")
+```
+
+
+
+```{r landingpage, echo=FALSE}
+# Create a vector of image URLs
+images <- c(
+  "/pages/images/image5.png"
+)
+
+# Create a vector of card texts
+texts <- c(
+  "Find places where your dollars go the farthest and tips to create amazing travel experiences without breaking the bank. Travel more and spend less!"
+)
+
+# Create a list of HTML tags for the cards
+card(
+  card_header(
+    class = "card-header",
+    "Canary ToursKE"
+  ),
+  
+  card_body(
+    # Add an img tag for the card image
+    htmltools::tags$img(
+      src = images,
+      class = "card-image",
+    )),
+    
+    card_body(
+      # Add a div tag for the card text
+      htmltools::tags$div(
+        class = "card-text",
+        texts
+      )),
+    
+  card_body(
+      htmltools::tags$button(
+        class = "card-button",
+        htmltools::tags$a(
+          href = "https://chat.whatsapp.com/D6QKPzWip0HGCPf8P3Z5Yb",
+          "Contact Us"
+        )
+      )
+  )
+)
+```
+
 ________________________________________________________________________
+# Our Mission
 
-<div class="card">
-  <h1>
-    Canary ToursKE
-  </h1>
-  
-  <img src="/pages/images/image5.jpg" alt="homepage" style="width:100%; border-radius:50%;">
-  
-  
-  <p class="title">
-    Find places where your dollars go the farthest and tips to create amazing travel experiences without breaking the bank. Travel more and spend less!
-  </p>
-  
-  <p>
-    <button>
-      Contact
-    </button>
-  </p>
-</div>
+```{r mission, echo=FALSE}
+# Create a vector of card texts
+texts <- c(
+  "Turning every moment into a lifetime memory"
+)
 
-________________________________________________________________________
-
-<div class="card">
-  <h1>
-    Our Mission
-  </h1>
-  
-  <p class="title">
-    Turning every moment into a lifetime memory
-  </p>
- 
-</div>
+# Create a list of HTML tags for the cards
+card(
+  card_body(
+    # Add an img tag for the card image
+    htmltools::tags$p(
+      texts,
+      class = "title"
+    ))
+)
+```
 
 _______________________________________________________________________
+# Our Vision
 
-<div class="card">
-  <h1>
-    Our Vision
-  </h1>
+```{r vision, echo=FALSE}
+# Create a vector of card texts
+texts <- c(
+  "Taking adventure to another level"
+)
+
+# Create a list of HTML tags for the cards
+card(
+  card_body(
+    # Add an img tag for the card image
+    htmltools::tags$p(
+      texts,
+      class = "title"
+    )),
   
-  <p class="title">
-    Taking adventure to another level
-  </p>
- 
-</div>
+  class = "card2" 
+)
+```
 
 _______________________________________________________________________
-
 :::{.grid}
-::: {.g-col-6}
-<div class="card">
-  <h1>
-    The thrill of a game drive with Canary ToursKE
-  </h1>
-  
-  <img src="/pages/images/image4.jpg" alt="game_drives" style="width:100%">
-  
-  
-  <p class="title">
-    As the sun rises over the vast plains, game drive enthusiasts embark on their safari vehicles, accompanied by experienced guides and trackers. The open-sided 4x4 vehicles provide an unobstructed view of the surrounding landscapes, ensuring that every moment is captured, from the majestic elephants grazing in the distance to the elusive big cats prowling through the grass
-  </p>
-</div>
+::: {.g-col-12}
+# Deals!
 
-_____________________________________
+```{r, echo=FALSE}
+# Create a vector of image URLs
+images <- c(
+  "/pages/images/image4.jpg",
+  "/pages/images/image7.jpg",
+  "/pages/images/image1.jpg",
+  "/pages/images/image6.jpg"
+)
 
-<div class="card">
-  <h1>
-    Other with Canary ToursKE
-  </h1>
+# Create a vector of card headers
+headers <- c("The thrill of a game drive with Canary ToursKE", "Other with Canary ToursKE", "Cultural adventures with Canary ToursKE", "Corporate Events with Canary ToursKE")
+
+# Create a vector of card texts
+texts <- c(
+  "As the sun rises over the vast plains, game drive enthusiasts embark on their safari vehicles, accompanied by experienced guides and trackers. The open-sided 4x4 vehicles provide an unobstructed view of the surrounding landscapes, ensuring that every moment is captured, from the majestic elephants grazing in the distance to the elusive big cats prowling through the grass",
   
-  <img src="/pages/images/image7.jpg" alt="game_drives" style="width:100%">
+  " ",
   
-  <p class="title">
+  "Kenya, a diverse and vibrant country in East Africa, is home to a rich tapestry of cultural practices that reflect the traditions and values of its numerous ethnic groups. These practices, deeply rooted in history, play a significant role in shaping the identity of the Kenyan people.",
+  
+  " "
+)
+
+# Create a list of HTML tags for the cards
+cards <- lapply(seq_along(images), function(i) {
+  card(
+  card_header(
+    # Add an img tag for the card image
+    class = "card-header",
+    htmltools::tags$p(
+      headers[i]
+    )),
     
-    
-  </p>
-</div>
+    card_body(
+      # Add a div tag for the card text
+      class = "card-image2",
+      
+      htmltools::tags$div(
+        class = "container",
+        htmltools::tags$image(
+        src = images[i]
+      )),
+      
+      htmltools::tags$div(
+        class = "top-left",
+        htmltools::tags$p(
+        texts[i]
+      ))
+    )
+  )
+})
 
-:::
-::: {.g-col-6}
-<div class="card">
-  <h1>
-    Cultural adventures with Canary ToursKE
-  </h1>
+# Create a slick carousel with the cards
+navset_card_tab(
+  full_screen = FALSE,
+
+  nav_panel(
+    title = "Game drives",
+    cards[1]
+  ),
+  nav_spacer(),
   
-  <img src="/pages/images/image1.jpg" alt="game_drives" style="width:100%">
+  nav_panel(
+    title = "Other",
+    cards[2]
+  ),
+  nav_spacer(),
   
-  <p class="title">
-    Kenya, a diverse and vibrant country in East Africa, is home to a rich tapestry of cultural practices that reflect the traditions and values of its numerous ethnic groups. These practices, deeply rooted in history, play a significant role in shaping the identity of the Kenyan people.
-  </p>
-</div>
-
-__________________________________________________
-
-<div class="card">
-  <h1>
-    Corporate Events with Canary ToursKE
-  </h1>
+  nav_panel(
+    "Cultural Adventures",
+    cards[3]
+  ),
+  nav_spacer(),
   
-  <img src="/pages/images/image6.jpg" alt="game_drives" style="width:100%">
-  
-  <p class="title">
-    
-    
-  </p>
-</div>
-:::
-::: {.g-col-6}
-
-:::
-::: {.g-col-6}
-
+  nav_panel(
+    "Corporate Activities",
+    cards[4]
+  )
+)
+```
 :::
 :::

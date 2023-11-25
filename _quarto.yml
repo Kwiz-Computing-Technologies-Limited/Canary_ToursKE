@@ -6,7 +6,7 @@ website:
   description: "A tours and travel agency offering team activities and hotel bookings"
   back-to-top-navigation: true
   
-  favicon: ./images/image1.jpg
+  favicon: "./pages/images/logo.jpg"
   twitter-card: true
   site-url: https://canarytourske.onrender.com/
   
@@ -34,38 +34,12 @@ website:
       
 
   navbar:
+    logo: "./pages/images/logo.jpg"
+    logo-alt: "My Logo"
+
     right:
       - text: "Home"
         href: index.html
-      - text: "Deals!"
-        menu:
-          - text: "Game drives"
-            href: pages/game_drives.html
-          - text: "Picnics"
-            href: pages/picnics.html
-          - text: "Ziplining"
-            href: pages/Ziplining.html
-          - text: "Camping"
-            href: pages/Camping.html
-          - text: "Car Leasing"
-            href: pages/Car_leasing.html
-          - text: "Corporate Activities"
-            href: pages/Corporates.html
-          - text: "Cultural Adventures"
-            href: pages/Cultural_Adventure.html
-          - text: "Destinations"
-            href: pages/Destinations.html
-          - text: "Rock Climbing"
-            href: pages/Rock_climbing.html
-          - text: "Safari"
-            href: pages/Safari.html
-          - text: "Team Building"
-            href: pages/Team_building.html
-          - text: "Festivals & Events"
-            href: pages/Festival_Events.html
-          - text: "Hiking & Trekking"
-            href: pages/Hiking_Trekking.html
-          
           # Add more services here...
       - text: "Hotel bookings"
         href: pages/hotel_bookings.html
@@ -80,9 +54,10 @@ format:
     page-layout: full
     css: styles.css
     toc: true
+    toc-location: right
     theme: 
-      light: united
-      dark: darkly
+      light: morph
+      dark: solar
 
 
     highlight: tango
