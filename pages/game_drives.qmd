@@ -28,7 +28,6 @@ dependencies("shiny")
 ```
 
 :::{.grid}
-
 ::: {.g-col-12}
 <div class="game_drives_description" style="font-size:30px; text-align: center; align-items: center;">
 

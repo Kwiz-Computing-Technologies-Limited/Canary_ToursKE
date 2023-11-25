@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "CANARY TOURS",
+    "title": "\nCanary ToursKE\n",
     "section": "",
-    "text": "An Eco tour agency,leading in adventure and travel"
+    "text": "Canary ToursKE\n\n\n\nFind places where your dollars go the farthest and tips to create amazing travel experiences without breaking the bank. Travel more and spend less!\n\n\n\nContact\n\n\n\n\n\n\nOur Mission\n\n\nTurning every moment into a lifetime memory\n\n\n\n\n\nOur Vision\n\n\nTaking adventure to another level\n\n\n\n\n\n\n\nThe thrill of a game drive with Canary ToursKE\n\n\n\nAs the sun rises over the vast plains, game drive enthusiasts embark on their safari vehicles, accompanied by experienced guides and trackers. The open-sided 4x4 vehicles provide an unobstructed view of the surrounding landscapes, ensuring that every moment is captured, from the majestic elephants grazing in the distance to the elusive big cats prowling through the grass\n\n\n\n\n\nOther with Canary ToursKE\n\n\n\n\n\n\n\n\n\nCultural adventures with Canary ToursKE\n\n\n\nKenya, a diverse and vibrant country in East Africa, is home to a rich tapestry of cultural practices that reflect the traditions and values of its numerous ethnic groups. These practices, deeply rooted in history, play a significant role in shaping the identity of the Kenyan people.\n\n\n\n\n\nCorporate Events with Canary ToursKE\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "index.html#our-mision",
@@ -131,5 +131,33 @@
     "title": "Travel Blog",
     "section": "",
     "text": "Back to top"
+  },
+  {
+    "objectID": "index.html#row",
+    "href": "index.html#row",
+    "title": "CANARY TOURS",
+    "section": "row",
+    "text": "row\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAn Eco tour agency,leading in adventure and travel\n\n\n\n\n\n\n\nFigure 1: Find places where your dollars go the farthest and tips to create amazing travel experiences without breaking the bank. Travel more and spend less!\n\n\n\n\n\nOur Mision:\nTurning every moment into a lifetime memory\n\n\nOur Vision\nTaking adventure to another level"
+  },
+  {
+    "objectID": "pages/Home.html",
+    "href": "pages/Home.html",
+    "title": "CANARY TOURS.KE",
+    "section": "",
+    "text": "&lt;!-- Create a div for each card --&gt;\n&lt;div class=\"card\"&gt;\n  &lt;!-- Add a header for the card --&gt;\n  &lt;div class=\"card-header\"&gt;Nature&lt;/div&gt;\n  &lt;!-- Add an image for the card --&gt;\n  &lt;img src=\"https://source.unsplash.com/random/300x300?nature\" alt=\"Nature\" class=\"card-image\"&gt;\n  &lt;!-- Add some text for the card --&gt;\n  &lt;div class=\"card-text\"&gt;This is a card about nature. Nature is the natural, physical, material world or universe.&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"card\"&gt;\n  &lt;div class=\"card-header\"&gt;City&lt;/div&gt;\n  &lt;img src=\"https://source.unsplash.com/random/300x300?city\" alt=\"City\" class=\"card-image\"&gt;\n  &lt;div class=\"card-text\"&gt;This is a card about city. A city is a large human settlement with extensive systems for housing, transportation, sanitation, utilities, land use, and communication.&lt;/div&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"card\"&gt;\n  &lt;div class=\"card-header\"&gt;Animal&lt;/div&gt;\n  &lt;img src=\"https://source.unsplash.com/random/300x300?animal\" alt=\"Animal\" class=\"card-image\"&gt;\n  &lt;div class=\"card-text\"&gt;This is a card about animal. An animal is a living organism that feeds on organic matter, typically having specialized sense organs and nervous system and able to respond rapidly to stimuli.&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"card\"&gt;\n  &lt;div class=\"card-header\"&gt;Food&lt;/div&gt;\n  &lt;img src=\"https://source.unsplash.com/random/300x300?food\" alt=\"Food\" class=\"card-image\"&gt;\n  &lt;div class=\"card-text\"&gt;This is a card about food. Food is any substance consumed to provide nutritional support for an organism. Food is usually of plant, animal or fungal origin, and contains essential nutrients.&lt;/div&gt;\n&lt;/div&gt;\n\n &lt; &gt;\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "pages/Home.html#our-mision",
+    "href": "pages/Home.html#our-mision",
+    "title": "CANARY TOURS",
+    "section": "Our Mision:",
+    "text": "Our Mision:\nTurning every moment into a lifetime memory"
+  },
+  {
+    "objectID": "pages/Home.html#our-vision",
+    "href": "pages/Home.html#our-vision",
+    "title": "CANARY TOURS",
+    "section": "Our Vision",
+    "text": "Our Vision\nTaking adventure to another level"
   }
 ]
