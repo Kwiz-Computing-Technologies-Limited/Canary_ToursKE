@@ -54,6 +54,7 @@ format:
     css: styles.css
     toc: true
     toc-location: right
+    toc-title: " "
     theme: 
       light: simplex
       dark: darkly

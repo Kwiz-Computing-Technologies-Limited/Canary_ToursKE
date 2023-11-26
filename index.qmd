@@ -14,63 +14,7 @@ library(bslib)
 
 <style>
 
-/* Style the cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 100%;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-  }
 
-  .title {
-    color: grey90;
-    font-size: 30px;
-  }
-  
-  h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-
-
-  a {
-    text-decoration: none;
-    font-size: 30px;
-    color: white;
-  }
-
-  button:hover, a:hover {
-    opacity: 0.7;
-  }
-
-_______________________________________________
-
-  /* Style the carousel container */
-  .carousel {
-    width: 600px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-  }
-
-  /* Style the carousel slides */
-  .carousel-slide {
-    display: flex;
-    width: 100%;
-    height: 300px;
-  }
-
-  .button-prev {
-    left: 10px;
-  }
-
-  .button-next {
-    right: 10px;
-  }
 </style>
 
 
