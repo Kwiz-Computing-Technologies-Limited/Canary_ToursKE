@@ -1,12 +1,7 @@
 ---
 title: "Hotel Bookings"
-description: "Enjoy Your Stays with CANARY TOURS.KE"
-output: 
-  html_document:
-    theme: united
-    highlight: tango
-    toc: true
-    toc_float: true
+description: "CANARY TOURS.KE"
+output: html
 ---
 
 ```{r setup, echo=FALSE}

@@ -52,7 +52,7 @@ format:
   html:
     page-layout: full
     css: styles.css
-    toc: true
+    toc: false
     toc-location: right
     toc-title: " "
     theme: 
