@@ -56,11 +56,9 @@ tags$style("
   
   /* Style button*/
   button {
-    border: none;
     outline: 0;
     display: inline-block;
     padding: 8px;
-    background-color: ;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -233,7 +231,8 @@ navset_card_tab(
           htmltools::tags$div(
             class = "top-left",
             htmltools::tags$p(
-            "As the sun rises over the vast plains, game drive enthusiasts embark on their safari vehicles, accompanied by experienced guides and trackers. The open-sided 4x4 vehicles provide an unobstructed view of the surrounding landscapes, ensuring that every moment is captured, from the majestic elephants grazing in the distance to the elusive big cats prowling through the grass"))))),
+            "As the sun rises over the vast plains, game drive enthusiasts embark on their safari vehicles, accompanied by experienced guides and trackers. The open-sided 4x4 vehicles provide an unobstructed view of the surrounding landscapes, ensuring that every moment is captured, from the majestic elephants grazing in the distance to the elusive big cats prowling through the grass"))
+  ))),
   
   nav_spacer(),
   
@@ -386,7 +385,31 @@ navset_card_tab(
   nav_panel(
     title = "Other",
     card()
-  )
+  ))
+
+card(
+  layout_column_wrap(
+    width = 1/2,
+    
+    card_body(
+      htmltools::tags$button(
+        class = "button",
+        style = "border-top: 0px; border-left: 0px; border-right: 0px;",
+        htmltools::tags$a(
+        href = " ",
+        "Past Events",
+        style = "color: black;"
+        ))),
+    
+    card_body(
+      htmltools::tags$button(
+        class = "button",
+        style = "border-top: 0px; border-left: 0px; border-right: 0px;",
+        htmltools::tags$a(
+        href = " ",
+        "Future Events",
+        style = "color: black;"
+        ))))
 )
 ```
 :::
