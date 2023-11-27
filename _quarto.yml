@@ -40,8 +40,6 @@ website:
     right:
       - text: "Home"
         href: index.html
-      - text: "Hotel bookings"
-        href: pages/hotel_bookings.qmd
       - text: "Travel Magazine"
         href: pages/travel_magazine.qmd
       - text: "About Us"

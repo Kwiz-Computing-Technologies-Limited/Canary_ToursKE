@@ -12,18 +12,13 @@ library(slickR)
 library(bslib)
 ```
 
-<style>
-
-
-</style>
-
 
 ```{r styling, echo=FALSE, message=FALSE, warning=FALSE}
 # Add some custom CSS styling to the cards
 tags$style("
   /* Style the card container */
   .card {
-    box-shadow: 0px 4px 8px 0px;
+    box-shadow: 0px 0px 0px 0px;
     max-width: 100%;
     max-height: 100%;
     margin: auto;
@@ -31,17 +26,19 @@ tags$style("
     font-family: arial;
     border-radius: 10px;
     overflow: hidden;
+    border-top: 2px solid rgba(0,255,0, 0.5);
   }
 
   /* Style the card header */
   .card-header {
     padding: 10px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     text-align: center;
     font-family: arial;
     font-size: 30px;
     font-weight: bold;
+    border-bottom: 2px solid rgba(0,255,0, 0.8);
   }
 
   /* Style the card image */
@@ -63,13 +60,14 @@ tags$style("
     outline: 0;
     display: inline-block;
     padding: 8px;
-    color: white;
-    background-color: #000;
+    background-color: ;
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 30px;
     border-radius: 10px;
+    border: 2px solid rgba(0,255,0, 0.8);
+    url: https://chat.whatsapp.com/D6QKPzWip0HGCPf8P3Z5Yb;
   }
   
   /* Container holding the image and the text */
@@ -92,7 +90,9 @@ tags$style("
     min-bottom: 100px;
     color: grey90;
     font-size: 30px;
-    background-color: grey;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 10px;
   }
 ")
 ```
@@ -100,16 +100,6 @@ tags$style("
 
 
 ```{r landingpage, echo=FALSE}
-# Create a vector of image URLs
-images <- c(
-  "/pages/images/image5.png"
-)
-
-# Create a vector of card texts
-texts <- c(
-  "Find places where your dollars go the farthest and tips to create amazing travel experiences without breaking the bank. Travel more and spend less!"
-)
-
 # Create a list of HTML tags for the cards
 card(
   card_header(
@@ -120,7 +110,7 @@ card(
   card_body(
     # Add an img tag for the card image
     htmltools::tags$img(
-      src = images,
+      src = "/pages/images/image4.jpg",
       class = "card-image",
     )),
     
@@ -128,15 +118,17 @@ card(
       # Add a div tag for the card text
       htmltools::tags$div(
         class = "card-text",
-        texts
+        "Find places where your dollars go the farthest and tips to create amazing travel experiences without breaking the bank. Travel more and spend less!"
       )),
     
   card_body(
       htmltools::tags$button(
-        class = "card-button",
+        class = "button",
         htmltools::tags$a(
           href = "https://chat.whatsapp.com/D6QKPzWip0HGCPf8P3Z5Yb",
-          "Contact Us"
+          "Contact Us",
+          
+          style = "color: black;"
         )
       )
   )
@@ -144,7 +136,6 @@ card(
 ```
 
 ________________________________________________________________________
-# Our Mission
 
 ```{r mission, echo=FALSE}
 # Create a vector of card texts
@@ -155,6 +146,14 @@ texts <- c(
 # Create a list of HTML tags for the cards
 card(
   card_body(
+    htmltools::tags$p(
+      "Our Mission",
+      class = "title",
+      style = "font-weight: bold;"
+    )
+  ),
+  
+  card_body(
     # Add an img tag for the card image
     htmltools::tags$p(
       texts,
@@ -164,7 +163,6 @@ card(
 ```
 
 _______________________________________________________________________
-# Our Vision
 
 ```{r vision, echo=FALSE}
 # Create a vector of card texts
@@ -175,98 +173,219 @@ texts <- c(
 # Create a list of HTML tags for the cards
 card(
   card_body(
+    htmltools::tags$p(
+      "Our Vision",
+      class = "title",
+      style = "font-weight: bold;"
+    )
+  ),
+  
+  card_body(
     # Add an img tag for the card image
     htmltools::tags$p(
       texts,
       class = "title"
-    )),
-  
-  class = "card2" 
+    ))
 )
 ```
 
 _______________________________________________________________________
 :::{.grid}
 ::: {.g-col-12}
-# Deals!
 
 ```{r, echo=FALSE}
-# Create a vector of image URLs
-images <- c(
-  "/pages/images/image4.jpg",
-  "/pages/images/image7.jpg",
-  "/pages/images/image1.jpg",
-  "/pages/images/image6.jpg"
-)
-
-# Create a vector of card headers
-headers <- c("The thrill of a game drive with Canary ToursKE", "Other with Canary ToursKE", "Cultural adventures with Canary ToursKE", "Corporate Events with Canary ToursKE")
-
-# Create a vector of card texts
-texts <- c(
-  "As the sun rises over the vast plains, game drive enthusiasts embark on their safari vehicles, accompanied by experienced guides and trackers. The open-sided 4x4 vehicles provide an unobstructed view of the surrounding landscapes, ensuring that every moment is captured, from the majestic elephants grazing in the distance to the elusive big cats prowling through the grass",
-  
-  " ",
-  
-  "Kenya, a diverse and vibrant country in East Africa, is home to a rich tapestry of cultural practices that reflect the traditions and values of its numerous ethnic groups. These practices, deeply rooted in history, play a significant role in shaping the identity of the Kenyan people.",
-  
-  " "
-)
-
-# Create a list of HTML tags for the cards
-cards <- lapply(seq_along(images), function(i) {
-  card(
+card(
   card_header(
-    # Add an img tag for the card image
-    class = "card-header",
     htmltools::tags$p(
-      headers[i]
-    )),
-    
-    card_body(
-      # Add a div tag for the card text
-      class = "card-image2",
-      
-      htmltools::tags$div(
-        class = "container",
-        htmltools::tags$image(
-        src = images[i]
-      )),
-      
-      htmltools::tags$div(
-        class = "top-left",
-        htmltools::tags$p(
-        texts[i]
-      ))
-    )
-  )
-})
+    "Deals",
+    class = "title",
+    style = "font-weight: bold;"
+  )),
+  style = "border: none;"
+)
 
-# Create a slick carousel with the cards
+# Create a tab panels with cards for services offered
 navset_card_tab(
   full_screen = FALSE,
 
+  # game drives
   nav_panel(
     title = "Game drives",
-    cards[1]
-  ),
+    card(
+      card_header(
+        style = "border: 0px;",
+        # Add an img tag for the card image
+        class = "card-header",
+        htmltools::tags$p(
+          "The thrill of a game drive with Canary ToursKE"
+        )),
+    
+        card_body(
+          # Add a div tag for the card text
+          class = "card-image2",
+      
+          htmltools::tags$div(
+            class = "container",
+            htmltools::tags$image(
+            src = "/pages/images/image3.jpg"
+          )),
+      
+          htmltools::tags$div(
+            class = "top-left",
+            htmltools::tags$p(
+            "As the sun rises over the vast plains, game drive enthusiasts embark on their safari vehicles, accompanied by experienced guides and trackers. The open-sided 4x4 vehicles provide an unobstructed view of the surrounding landscapes, ensuring that every moment is captured, from the majestic elephants grazing in the distance to the elusive big cats prowling through the grass"))))),
+  
+  nav_spacer(),
+  
+  # Cultural Adventures
+  nav_panel(
+    "Cultural Adventures",
+    
+    card(
+      card_header(
+        style = "border: 0px;",
+        # Add an img tag for the card image
+        class = "card-header",
+        htmltools::tags$p(
+          "Cultural adventures with Canary ToursKE"
+        )),
+    
+        card_body(
+          # Add a div tag for the card text
+          class = "card-image2",
+      
+          htmltools::tags$div(
+            class = "container",
+            htmltools::tags$image(
+            src = "/pages/images/image1.jpg"
+          )),
+      
+          htmltools::tags$div(
+            class = "top-left",
+            htmltools::tags$p(
+            "Kenya, a diverse and vibrant country in East Africa, is home to a rich tapestry of cultural practices that reflect the traditions and values of its numerous ethnic groups. These practices, deeply rooted in history, play a significant role in shaping the identity of the Kenyan people."))))),
+  
+  nav_spacer(),
+  
+  # Team Building
+  nav_panel(
+    title = "Team Building",
+    card(
+      card_header(
+        style = "border: 0px;",
+        # Add an img tag for the card image
+        class = "card-header",
+        htmltools::tags$p(
+          "Team building with Canary ToursKE"
+        )),
+    
+        card_body(
+          # Add a div tag for the card text
+          class = "card-image2",
+      
+          htmltools::tags$div(
+            class = "container",
+            htmltools::tags$image(
+            src = "/pages/images/image5.jpg"
+          )),
+      
+          htmltools::tags$div(
+            class = "top-left",
+            htmltools::tags$p(
+            "work team-building exercises are about feats of human endurance, group problem-solving activities or outdoors pursuits aimed at lifting spirits and fostering a team spirit.(Team Building)"))))),
+  
+  nav_spacer(),
+  
+  # Corporate events
+  nav_panel(
+    "Corporate Activities",
+    card(
+      card_header(
+        style = "border: 0px;",
+        # Add an img tag for the card image
+        class = "card-header",
+        htmltools::tags$p(
+          "Corporate Events with Canary ToursKE"
+        )),
+    
+        card_body(
+          # Add a div tag for the card text
+          class = "card-image2",
+      
+          htmltools::tags$div(
+            class = "container",
+            htmltools::tags$image(
+            src = "/pages/images/image.jpg"
+          )),
+      
+          htmltools::tags$div(
+            class = "top-left",
+            htmltools::tags$p(
+            " "))))),
+  
+  nav_spacer(),
+  
+  # Hotel bookings
+  nav_panel(
+    title = "Hotel Bookings",
+    card(
+      card_header(
+        style = "border: 0px;",
+        # Add an img tag for the card image
+        class = "card-header",
+        htmltools::tags$p(
+          "Book your Hotel stays with Canary ToursKE"
+        )),
+    
+        card_body(
+          # Add a div tag for the card text
+          class = "card-image2",
+      
+          htmltools::tags$div(
+            class = "container",
+            htmltools::tags$image(
+            src = "/pages/images/image.jpg"
+          )),
+      
+          htmltools::tags$div(
+            class = "top-left",
+            htmltools::tags$p(
+            " "))))),
+  
+  nav_spacer(),
+  
+  # Picnics
+  nav_panel(
+    title = "Picnics",
+    card(
+      card_header(
+        style = "border: 0px;",
+        # Add an img tag for the card image
+        class = "card-header",
+        htmltools::tags$p(
+          "Picnics with Canary ToursKE"
+        )),
+    
+        card_body(
+          # Add a div tag for the card text
+          class = "card-image2",
+      
+          htmltools::tags$div(
+            class = "container",
+            htmltools::tags$image(
+            src = "/pages/images/image.jpg"
+          )),
+      
+          htmltools::tags$div(
+            class = "top-left",
+            htmltools::tags$p(
+            " "))))),
+  
   nav_spacer(),
   
   nav_panel(
     title = "Other",
-    cards[2]
-  ),
-  nav_spacer(),
-  
-  nav_panel(
-    "Cultural Adventures",
-    cards[3]
-  ),
-  nav_spacer(),
-  
-  nav_panel(
-    "Corporate Activities",
-    cards[4]
+    card()
   )
 )
 ```
