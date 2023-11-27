@@ -233,7 +233,30 @@ navset_card_tab(
             class = "top-left",
             htmltools::tags$p(
             "As the sun rises over the vast plains, game drive enthusiasts embark on their safari vehicles, accompanied by experienced guides and trackers. The open-sided 4x4 vehicles provide an unobstructed view of the surrounding landscapes, ensuring that every moment is captured, from the majestic elephants grazing in the distance to the elusive big cats prowling through the grass"))
-  ))),
+  ),
+  
+  layout_column_wrap(
+    width = 1/2,
+    
+    card_body(
+      htmltools::tags$button(
+        class = "button",
+        style = "border-top: 0px; border-left: 0px; border-right: 0px;",
+        htmltools::tags$a(
+        href = " ",
+        "Past Events",
+        style = "color: black;"
+        ))),
+    
+    card_body(
+      htmltools::tags$button(
+        class = "button",
+        style = "border-top: 0px; border-left: 0px; border-right: 0px;",
+        htmltools::tags$a(
+        href = " ",
+        "Future Events",
+        style = "color: black;"
+        )))))),
   
   nav_spacer(),
   
@@ -262,7 +285,30 @@ navset_card_tab(
           htmltools::tags$div(
             class = "top-left",
             htmltools::tags$p(
-            "Kenya, a diverse and vibrant country in East Africa, is home to a rich tapestry of cultural practices that reflect the traditions and values of its numerous ethnic groups. These practices, deeply rooted in history, play a significant role in shaping the identity of the Kenyan people."))))),
+            "Kenya, a diverse and vibrant country in East Africa, is home to a rich tapestry of cultural practices that reflect the traditions and values of its numerous ethnic groups. These practices, deeply rooted in history, play a significant role in shaping the identity of the Kenyan people."))),
+      
+      layout_column_wrap(
+    width = 1/2,
+    
+    card_body(
+      htmltools::tags$button(
+        class = "button",
+        style = "border-top: 0px; border-left: 0px; border-right: 0px;",
+        htmltools::tags$a(
+        href = " ",
+        "Past Events",
+        style = "color: black;"
+        ))),
+    
+    card_body(
+      htmltools::tags$button(
+        class = "button",
+        style = "border-top: 0px; border-left: 0px; border-right: 0px;",
+        htmltools::tags$a(
+        href = " ",
+        "Future Events",
+        style = "color: black;"
+        )))))),
   
   nav_spacer(),
   
@@ -290,7 +336,30 @@ navset_card_tab(
           htmltools::tags$div(
             class = "top-left",
             htmltools::tags$p(
-            "work team-building exercises are about feats of human endurance, group problem-solving activities or outdoors pursuits aimed at lifting spirits and fostering a team spirit.(Team Building)"))))),
+            "work team-building exercises are about feats of human endurance, group problem-solving activities or outdoors pursuits aimed at lifting spirits and fostering a team spirit.(Team Building)"))),
+      
+      layout_column_wrap(
+    width = 1/2,
+    
+    card_body(
+      htmltools::tags$button(
+        class = "button",
+        style = "border-top: 0px; border-left: 0px; border-right: 0px;",
+        htmltools::tags$a(
+        href = " ",
+        "Past Events",
+        style = "color: black;"
+        ))),
+    
+    card_body(
+      htmltools::tags$button(
+        class = "button",
+        style = "border-top: 0px; border-left: 0px; border-right: 0px;",
+        htmltools::tags$a(
+        href = " ",
+        "Future Events",
+        style = "color: black;"
+        )))))),
   
   nav_spacer(),
   
@@ -318,7 +387,30 @@ navset_card_tab(
           htmltools::tags$div(
             class = "top-left",
             htmltools::tags$p(
-            " "))))),
+            " "))),
+      
+      layout_column_wrap(
+    width = 1/2,
+    
+    card_body(
+      htmltools::tags$button(
+        class = "button",
+        style = "border-top: 0px; border-left: 0px; border-right: 0px;",
+        htmltools::tags$a(
+        href = " ",
+        "Past Events",
+        style = "color: black;"
+        ))),
+    
+    card_body(
+      htmltools::tags$button(
+        class = "button",
+        style = "border-top: 0px; border-left: 0px; border-right: 0px;",
+        htmltools::tags$a(
+        href = " ",
+        "Future Events",
+        style = "color: black;"
+        )))))),
   
   nav_spacer(),
   
@@ -347,7 +439,30 @@ navset_card_tab(
           htmltools::tags$div(
             class = "top-left",
             htmltools::tags$p(
-            " "))))),
+            " "))),
+      
+      layout_column_wrap(
+    width = 1/2,
+    
+    card_body(
+      htmltools::tags$button(
+        class = "button",
+        style = "border-top: 0px; border-left: 0px; border-right: 0px;",
+        htmltools::tags$a(
+        href = " ",
+        "Past Events",
+        style = "color: black;"
+        ))),
+    
+    card_body(
+      htmltools::tags$button(
+        class = "button",
+        style = "border-top: 0px; border-left: 0px; border-right: 0px;",
+        htmltools::tags$a(
+        href = " ",
+        "Future Events",
+        style = "color: black;"
+        )))))),
   
   nav_spacer(),
   
@@ -376,17 +491,41 @@ navset_card_tab(
           htmltools::tags$div(
             class = "top-left",
             htmltools::tags$p(
-            " "))))),
+            " "))),
+      
+      layout_column_wrap(
+    width = 1/2,
+    
+    card_body(
+      htmltools::tags$button(
+        class = "button",
+        style = "border-top: 0px; border-left: 0px; border-right: 0px;",
+        htmltools::tags$a(
+        href = " ",
+        "Past Events",
+        style = "color: black;"
+        ))),
+    
+    card_body(
+      htmltools::tags$button(
+        class = "button",
+        style = "border-top: 0px; border-left: 0px; border-right: 0px;",
+        htmltools::tags$a(
+        href = " ",
+        "Future Events",
+        style = "color: black;"
+        )))))),
   
   nav_spacer(),
   
   nav_panel(
     title = "Other",
-    card()
-  ))
-
-card(
-  layout_column_wrap(
+    card(
+      card_body(
+        
+      ),
+      
+      layout_column_wrap(
     width = 1/2,
     
     card_body(
@@ -408,7 +547,8 @@ card(
         "Future Events",
         style = "color: black;"
         ))))
-)
+    )
+  ))
 ```
 :::
 :::
