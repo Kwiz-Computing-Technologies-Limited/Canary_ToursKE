@@ -61,11 +61,13 @@ tags$style("
     padding: 8px;
     text-align: center;
     cursor: pointer;
-    width: 100%;
+    max-width: 60%;
     font-size: 30px;
     border-radius: 10px;
     border: 2px solid rgba(0,255,0, 0.8);
     url: https://chat.whatsapp.com/D6QKPzWip0HGCPf8P3Z5Yb;
+    margin-left: 20%;
+    margin-right: 20%;
   }
   
   /* Container holding the image and the text */
