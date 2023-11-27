@@ -15,9 +15,7 @@ website:
     type: textbox
   
   page-footer: 
-    left: 
-      - text: "Created by: Kwiz Computing Technologies Limited" 
-        href: "https://www.kwizresearch.com"
+    left: "Created by: Kwiz Computing Technologies Limited" 
     right: "Copyright: Canary Tours.ke (2023)"
     center: 
       - icon: github
