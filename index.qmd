@@ -225,7 +225,8 @@ navset_card_tab(
           htmltools::tags$div(
             class = "container",
             htmltools::tags$image(
-            src = "/pages/images/image3.jpg"
+            src = "/pages/images/image3.jpg",
+            class = "card-image"
           )),
       
           htmltools::tags$div(
@@ -251,12 +252,11 @@ navset_card_tab(
     
         card_body(
           # Add a div tag for the card text
-          class = "card-image2",
-      
           htmltools::tags$div(
             class = "container",
             htmltools::tags$image(
-            src = "/pages/images/image1.jpg"
+            src = "/pages/images/image1.jpg",
+            class = "card-image"
           )),
       
           htmltools::tags$div(
@@ -280,12 +280,11 @@ navset_card_tab(
     
         card_body(
           # Add a div tag for the card text
-          class = "card-image2",
-      
           htmltools::tags$div(
             class = "container",
             htmltools::tags$image(
-            src = "/pages/images/image5.jpg"
+            src = "/pages/images/image5.jpg",
+            class = "card-image"
           )),
       
           htmltools::tags$div(
@@ -309,12 +308,11 @@ navset_card_tab(
     
         card_body(
           # Add a div tag for the card text
-          class = "card-image2",
-      
           htmltools::tags$div(
             class = "container",
             htmltools::tags$image(
-            src = "/pages/images/image.jpg"
+            src = " ",
+            class = "card-image"
           )),
       
           htmltools::tags$div(
@@ -338,12 +336,12 @@ navset_card_tab(
     
         card_body(
           # Add a div tag for the card text
-          class = "card-image2",
-      
+
           htmltools::tags$div(
             class = "container",
             htmltools::tags$image(
-            src = "/pages/images/image.jpg"
+            src = "/pages/images/image.jpg",
+            class = "card-image"
           )),
       
           htmltools::tags$div(
@@ -367,12 +365,12 @@ navset_card_tab(
     
         card_body(
           # Add a div tag for the card text
-          class = "card-image2",
-      
+
           htmltools::tags$div(
             class = "container",
             htmltools::tags$image(
-            src = "/pages/images/image.jpg"
+            src = "/pages/images/image.jpg",
+            class = "card-image"
           )),
       
           htmltools::tags$div(
