@@ -8,10 +8,8 @@ site:
 # Install and load the slickR package
 # install.packages("slickR")
 library(htmltools)
-library(slickR)
 library(bslib)
 ```
-
 
 ```{r styling, echo=FALSE, message=FALSE, warning=FALSE}
 # Add some custom CSS styling to the cards
@@ -97,8 +95,6 @@ tags$style("
 ")
 ```
 
-
-
 ```{r landingpage, echo=FALSE}
 # Create a list of HTML tags for the cards
 card(
@@ -138,7 +134,7 @@ card(
 )
 ```
 
-________________________________________________________________________
+------------------------------------------------------------------------
 
 ```{r mission, echo=FALSE}
 # Create a vector of card texts
@@ -165,7 +161,7 @@ card(
 )
 ```
 
-_______________________________________________________________________
+------------------------------------------------------------------------
 
 ```{r vision, echo=FALSE}
 # Create a vector of card texts
@@ -192,10 +188,10 @@ card(
 )
 ```
 
-_______________________________________________________________________
-:::{.grid}
-::: {.g-col-12}
+------------------------------------------------------------------------
 
+::: grid
+::: g-col-12
 ```{r, echo=FALSE}
 card(
   card_header(
