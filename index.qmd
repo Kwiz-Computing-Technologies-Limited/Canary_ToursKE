@@ -47,7 +47,7 @@ tags$style("
     font-family: arial;
     border-radius: 10px;
     overflow: hidden;
-    border-top: 2px solid rgba(0,255,0, 0.5);
+    border-top: 2px solid rgba(143, 151, 121, 0.5);
     background: rgba(246, 215, 176, 0.1)
   }
 
@@ -60,7 +60,7 @@ tags$style("
     font-family: arial;
     font-size: 30px;
     font-weight: bold;
-    border-bottom: 2px solid rgba(0,255,0, 0.8);
+    border-bottom: 2px solid rgba(143, 151, 121, 0.8);
   }
 
   /* Style the card image */
@@ -87,7 +87,7 @@ tags$style("
     font-size: 30px;
     border-radius: 10px;
     border: none;
-    border-bottom: 2px solid rgba(0,255,0, 0.8);
+    border-bottom: 2px solid rgba(143, 151, 121, 1);
     url: https://chat.whatsapp.com/D6QKPzWip0HGCPf8P3Z5Yb;
     margin-left: 20%;
     margin-right: 20%;
