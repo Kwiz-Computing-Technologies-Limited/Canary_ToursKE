@@ -423,8 +423,8 @@ navset_card_tab(
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # Define the cards data
-card_images <- function(i) {
-  src = paste0("/pages/images/image", i, ".jpg")
+card_images <- function(image_path) {
+  src = image_path
   
   list(
     header = "Gallery",
@@ -442,7 +442,7 @@ card_images <- function(i) {
 }
 
 
-cards <- lapply(1:6, function(x) card_images(i = x))
+cards <- lapply(stringr::str_c("./pages/images/", list.files("./pages/images")), function(x) card_images(image_path = x))
 ```
 
 
