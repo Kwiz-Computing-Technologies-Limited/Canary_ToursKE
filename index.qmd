@@ -201,6 +201,7 @@ mission_vision_card = list(
         style = "color:brown; font-size:30px; font-color: brown; margin-left: 20%; margin-right: 20%; font-weight: bold;")),
     
     body2 = card_body(
+      height = "100px",
       
       # Add a div tag for the card text
       htmltools::tags$div(
@@ -218,6 +219,7 @@ mission_vision_card = list(
         style = "color:brown; font-size:30px; font-color: brown; margin-left: 20%; margin-right: 20%; font-weight: bold;")),
     
     body2 = card_body(
+      height = "100px",
       
       # Add a div tag for the card text
       htmltools::tags$div(
