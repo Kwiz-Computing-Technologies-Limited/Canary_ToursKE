@@ -19,19 +19,27 @@ website:
     right: "Copyright: Canary Tours.ke (2023)"
     center: 
       - icon: github
-        href: https://github.com/
+        href: https://github.com/Kwiz-Computing-Technologies-Limited/Canary_ToursKE/blob/main
+        target: _blank
       - icon: twitter 
         href: https://twitter.com/ 
+        target: _blank
       - icon: instagram
         href: https://instagram.com/
+        target: _blank
       - icon: tiktok
         href: https://tiktok.com/
+        target: _blank
       - icon: facebook
         href: https://facebook.com/
+        target: _blank
       - icon: whatsapp
         href: https://chat.whatsapp.com/D6QKPzWip0HGCPf8P3Z5Yb
+        target: _blank
       - icon: email
-      
+        href: mailto:kanjabrian955@gmail.com
+        target: _blank
+
 
   navbar:
     logo: "./pages/images/logo.jpeg"
@@ -40,10 +48,6 @@ website:
     right:
       - text: "Home"
         href: index.html
-      - text: "Travel Magazine"
-        href: pages/travel_magazine.qmd
-      - text: "About Us"
-        href: pages/about.qmd
 
 
 format:

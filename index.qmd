@@ -4,7 +4,7 @@ site:
   theme: quarto
 ---
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r functions, echo=FALSE, message=FALSE, warning=FALSE}
 source("./pages/functions/sliding_cards.R")
 ```
 
@@ -121,7 +121,7 @@ tags$style("
 ```
 
 
-```{r Landingpage, echo=FALSE, message=FALSE, warning=FALSE}
+```{r landingpage, echo=FALSE, message=FALSE, warning=FALSE}
 # Define Landing_page Card
 card_images <- function(i) {
   src = paste0("./pages/images/image", i, ".jpg")
@@ -140,32 +140,13 @@ card_images <- function(i) {
         htmltools::tags$image(
           src = src,
           class = "card-image"
-          ))),
-    
-    body2 = card_body(
-      
-      # Add a div tag for the card text
-      htmltools::tags$div(
-        class = "card-text",
-        "Find places where your dollars go the farthest and tips to create amazing travel experiences without breaking the bank. Travel more and spend less!"),
-      
-      htmltools::tags$button(
-        class = "button",
-        htmltools::tags$a(
-          href = "https://chat.whatsapp.com/D6QKPzWip0HGCPf8P3Z5Yb",
-          "Contact Us",
-          
-          style = "color: brown;")
-        ))
+          )))
     )
 }
 
 
 cards <- lapply(2:3, function(x) card_images(i = x))
-```
 
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # Render the slideshow
 htmltools::browsable(
   tags$html(
@@ -184,11 +165,26 @@ htmltools::browsable(
     )
   )
 )
+
+card_body(
+      
+      # Add a div tag for the card text
+      htmltools::tags$div(
+        class = "card-text",
+        "Find places where your dollars go the farthest and tips to create amazing travel experiences without breaking the bank. Travel more and spend less!"),
+      
+      htmltools::tags$button(
+        class = "button",
+        htmltools::tags$a(
+          href = "https://chat.whatsapp.com/D6QKPzWip0HGCPf8P3Z5Yb",
+          "Contact Us",
+          
+          style = "color: brown;")
+        ))
 ```
 
 
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r mission_vision, echo=FALSE, message=FALSE, warning=FALSE}
 # Render the mission and vision cards
 
 mission_vision_card = list(
@@ -251,7 +247,7 @@ htmltools::browsable(
 ```
 
 
-```{r, echo=FALSE}
+```{r deals, echo=FALSE}
 bslib::card(
   card_header(
     htmltools::tags$p(
@@ -423,7 +419,7 @@ navset_card_tab(
 ```
 
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r gallery, echo=FALSE, message=FALSE, warning=FALSE}
 # Define the cards data
 card_images <- function(image_path) {
   src = image_path
@@ -445,10 +441,7 @@ card_images <- function(image_path) {
 
 
 cards <- lapply(stringr::str_c("./pages/images/", list.files("./pages/images")), function(x) card_images(image_path = x))
-```
 
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # Render the slideshow
 htmltools::browsable(
   tags$html(
@@ -467,3 +460,5 @@ htmltools::browsable(
   )
 )
 ```
+
+
