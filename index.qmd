@@ -171,6 +171,7 @@ card_body(
       # Add a div tag for the card text
       htmltools::tags$div(
         class = "card-text",
+        style = "text-align: center;",
         "Find places where your dollars go the farthest and tips to create amazing travel experiences without breaking the bank. Travel more and spend less!"),
       
       htmltools::tags$button(
