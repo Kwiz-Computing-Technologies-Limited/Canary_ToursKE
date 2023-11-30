@@ -27,6 +27,7 @@ tags$style("
     border-radius: 10px;
     overflow: hidden;
     border-top: 2px solid rgba(0,255,0, 0.5);
+    background: rgba(246, 215, 176, 0.1)
   }
 
   /* Style the card header */
@@ -235,7 +236,7 @@ bslib::card(
     class = "title",
     style = "font-weight: bold;"
   )),
-  style = "border: none;"
+  style = "border: none; background-color: rgba(246, 215, 176, 0)"
 )
 
 # Create a tab panels with cards for services offered
