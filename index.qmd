@@ -211,7 +211,7 @@ navset_card_tab(
   # game drives
   nav_panel(
     title = "Game drives",
-    card(
+    
       card_header(
         style = "border: 0px;",
         # Add an img tag for the card image
@@ -256,7 +256,7 @@ navset_card_tab(
         href = " ",
         "Future Events",
         style = "color: inverse;"
-        )))))),
+        ))))),
   
   nav_spacer(),
   
@@ -264,7 +264,7 @@ navset_card_tab(
   nav_panel(
     "Cultural Adventures",
     
-    card(
+    
       card_header(
         style = "border: 0px;",
         # Add an img tag for the card image
@@ -308,14 +308,15 @@ navset_card_tab(
         href = " ",
         "Future Events",
         style = "color: inverse;"
-        )))))),
+        ))))),
   
   nav_spacer(),
   
   # Team Building
   nav_panel(
     title = "Team Building",
-    card(
+    
+    
       card_header(
         style = "border: 0px;",
         # Add an img tag for the card image
@@ -359,7 +360,8 @@ navset_card_tab(
         href = " ",
         "Future Events",
         style = "color: inverse;"
-        )))))))
+        ))))))
+
 ```
 :::
 :::
