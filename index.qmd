@@ -96,6 +96,7 @@ tags$style("
 ")
 ```
 
+
 ```{r landingpage, echo=FALSE}
 # Create a list of HTML tags for the cards
 card(
@@ -191,8 +192,7 @@ card(
 
 ------------------------------------------------------------------------
 
-::: grid
-::: g-col-12
+
 ```{r, echo=FALSE}
 card(
   card_header(
@@ -363,5 +363,54 @@ navset_card_tab(
         ))))))
 
 ```
-:::
-:::
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+source("./pages/functions/sliding_cards.R")
+```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Define the cards data
+card_images <- function(i) {
+  src = paste0("/pages/images/image", i, ".jpg")
+  
+  list(
+    header = "Gallery",
+    body1 = card_body(
+      # Add a div tag for the card text
+          htmltools::tags$div(
+            class = "container",
+            htmltools::tags$image(
+            src = src,
+            class = "card-image"
+          ))
+    ),
+    body2 = NULL
+  )
+}
+
+
+cards <- lapply(1:6, function(x) card_images(i = x))
+```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Render the slideshow
+htmltools::browsable(
+  tags$html(
+    tags$head(
+      # Use Bootstrap 5
+      tags$link(
+        rel = "stylesheet",
+        href = "https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      ),
+      # Add some custom CSS for the animations
+      card_animation()
+    ),
+    tags$body(
+      slideshow(cards)
+    )
+  )
+)
+```
