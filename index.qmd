@@ -224,7 +224,7 @@ mission_vision_card = list(
       # Add a div tag for the card text
       htmltools::tags$div(
         class = "card-text",
-        "Find places where your dollars go the farthest and tips to create amazing travel experiences without breaking the bank. Travel more and spend less!",
+        "Embrace the horizon with a vision unbound, for in every adventure, the extraordinary becomes possible.",
         class = "title",
             style = "text-align: center;"))
     )
