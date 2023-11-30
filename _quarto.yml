@@ -20,25 +20,13 @@ website:
     center: 
       - icon: github
         href: https://github.com/Kwiz-Computing-Technologies-Limited/Canary_ToursKE/blob/main
-        target: _blank
-      - icon: twitter 
-        href: https://twitter.com/ 
-        target: _blank
-      - icon: instagram
-        href: https://instagram.com/
-        target: _blank
-      - icon: tiktok
-        href: https://tiktok.com/
-        target: _blank
-      - icon: facebook
-        href: https://facebook.com/
-        target: _blank
+        target: "_blank"
       - icon: whatsapp
         href: https://chat.whatsapp.com/D6QKPzWip0HGCPf8P3Z5Yb
-        target: _blank
+        target: "_blank"
       - icon: email
         href: mailto:kanjabrian955@gmail.com
-        target: _blank
+        target: "_blank"
 
 
   navbar:

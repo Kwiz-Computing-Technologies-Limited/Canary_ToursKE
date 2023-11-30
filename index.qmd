@@ -11,7 +11,9 @@ source("./pages/functions/sliding_cards.R")
 ```{r libraries, echo=FALSE, message=FALSE, warning=FALSE}
 library(htmltools)
 library(bslib)
+library(shiny)
 ```
+
 
 ```{r styling, echo=FALSE, message=FALSE, warning=FALSE}
 # Add some custom CSS styling to the cards
