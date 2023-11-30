@@ -4,9 +4,11 @@ site:
   theme: quarto
 ---
 
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+source("./pages/functions/sliding_cards.R")
+```
+
 ```{r libraries, echo=FALSE, message=FALSE, warning=FALSE}
-# Install and load the slickR package
-# install.packages("slickR")
 library(htmltools)
 library(bslib)
 ```
@@ -97,104 +99,136 @@ tags$style("
 ```
 
 
-```{r landingpage, echo=FALSE}
-# Create a list of HTML tags for the cards
-card(
-  card_header(
-    class = "card-header",
-    htmltools::tags$div(
-      "Canary ToursKE",
-      style = "color:brown;"
-    )
-  ),
+```{r Landingpage, echo=FALSE, message=FALSE, warning=FALSE}
+# Define Landing_page Card
+card_images <- function(i) {
+  src = paste0("./pages/images/image", i, ".jpg")
   
-  card_body(
-    # Add an img tag for the card image
-    htmltools::tags$img(
-      src = "/pages/images/image4.jpg",
-      class = "card-image",
-    )),
+  list(
+    header = card_header(
+      htmltools::tags$div(
+        " ",
+        style = "color:brown; font-size:30px; font-color: brown; margin-left: 20%; margin-right: 20%; font-weight: bold;"
+      )),
     
-    card_body(
+    body1 = card_body(
+      # Add a div tag for the card text
+      htmltools::tags$div(
+        class = "container",
+        htmltools::tags$image(
+          src = src,
+          class = "card-image"
+          ))),
+    
+    body2 = card_body(
+      
       # Add a div tag for the card text
       htmltools::tags$div(
         class = "card-text",
-        "Find places where your dollars go the farthest and tips to create amazing travel experiences without breaking the bank. Travel more and spend less!"
-      )),
-    
-  card_body(
+        "Find places where your dollars go the farthest and tips to create amazing travel experiences without breaking the bank. Travel more and spend less!"),
+      
       htmltools::tags$button(
         class = "button",
         htmltools::tags$a(
           href = "https://chat.whatsapp.com/D6QKPzWip0HGCPf8P3Z5Yb",
           "Contact Us",
           
-          style = "color: brown;"
-        )
+          style = "color: brown;")
+        ))
+    )
+}
+
+
+cards <- lapply(2:3, function(x) card_images(i = x))
+```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Render the slideshow
+htmltools::browsable(
+  tags$html(
+    tags$head(
+      # Use Bootstrap 5
+      tags$link(
+        rel = "stylesheet",
+        href = "https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
       )
+    ),
+    
+    tags$body(
+      slideshow(cards),
+      # Add some custom CSS for the animations
+      card_animation()
+    )
   )
 )
 ```
 
-------------------------------------------------------------------------
 
-```{r mission, echo=FALSE}
-# Create a vector of card texts
-texts <- c(
-  "Turning every moment into a lifetime memory"
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Render the mission and vision cards
+
+mission_vision_card = list(
+  # Mission
+  list(
+    body1 = card_body(
+      # Add a div tag for the card text
+      htmltools::tags$div(
+        "Our Mission",
+        style = "color:brown; font-size:30px; font-color: brown; margin-left: 20%; margin-right: 20%; font-weight: bold;")),
+    
+    body2 = card_body(
+      
+      # Add a div tag for the card text
+      htmltools::tags$div(
+        "Turning every moment into a lifetime memory",
+        class = "title",
+        style = "text-align: center;"))
+    ),
+  
+  # Vision
+  list(
+    body1 = card_body(
+      # Add a div tag for the card text
+      htmltools::tags$div(
+        "Our Vision",
+        style = "color:brown; font-size:30px; font-color: brown; margin-left: 20%; margin-right: 20%; font-weight: bold;")),
+    
+    body2 = card_body(
+      
+      # Add a div tag for the card text
+      htmltools::tags$div(
+        class = "card-text",
+        "Find places where your dollars go the farthest and tips to create amazing travel experiences without breaking the bank. Travel more and spend less!",
+        class = "title",
+            style = "text-align: center;"))
+    )
 )
 
-# Create a list of HTML tags for the cards
-card(
-  card_body(
-    htmltools::tags$p(
-      "Our Mission",
-      class = "title",
-      style = "font-weight: bold;"
+# Render the slideshow
+htmltools::browsable(
+  tags$html(
+    tags$head(
+      # Use Bootstrap 5
+      tags$link(
+        rel = "stylesheet",
+        href = "https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      )
+    ),
+    
+    tags$body(
+      slideshow(mission_vision_card),
+      # Add some custom CSS for the animations
+      card_animation()
     )
-  ),
-  
-  card_body(
-    # Add an img tag for the card image
-    htmltools::tags$p(
-      texts,
-      class = "title"
-    ))
+  )
 )
 ```
-
-------------------------------------------------------------------------
-
-```{r vision, echo=FALSE}
-# Create a vector of card texts
-texts <- c(
-  "Taking adventure to another level"
-)
-
-# Create a list of HTML tags for the cards
-card(
-  card_body(
-    htmltools::tags$p(
-      "Our Vision",
-      class = "title",
-      style = "font-weight: bold;"
-    )
-  ),
-  
-  card_body(
-    # Add an img tag for the card image
-    htmltools::tags$p(
-      texts,
-      class = "title"
-    ))
-)
-```
-
-------------------------------------------------------------------------
 
 
 ```{r, echo=FALSE}
-card(
+bslib::card(
   card_header(
     htmltools::tags$p(
     "Deals",
@@ -362,11 +396,6 @@ navset_card_tab(
         style = "color: inverse;"
         ))))))
 
-```
-
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-source("./pages/functions/sliding_cards.R")
 ```
 
 

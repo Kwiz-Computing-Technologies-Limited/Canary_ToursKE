@@ -4,15 +4,15 @@ library(bslib)
 
 # Create a function to generate a card
 card <- function(data) {
-  div(
-    class = "card",
-    div(class = "card-header", data$header),
     div(
-      class = "card-body",
-      div(class = "slide-in-top", data$body1),
-      div(class = "slide-in-bottom", data$body2)
+      class = "card",
+      div(class = "card-header", data$header),
+      div(
+        class = "card-body",
+        div(class = "slide-in-top", data$body1),
+        div(class = "slide-in-bottom", data$body2)
+      )
     )
-  )
 }
 
 # Create a function to generate a slideshow
@@ -45,6 +45,14 @@ card_animation <- function() {
           animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
         
+        .slide-in-left {
+          animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+        
+        .slide-in-right {
+          animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+        
         @keyframes slide-in-top {
           0% {
             transform: translateY(-1000px);
@@ -59,6 +67,28 @@ card_animation <- function() {
         @keyframes slide-in-bottom {
           0% {
             transform: translateY(1000px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+        
+        @keyframes slide-in-left {
+          0% {
+            transform: translateX(-1000px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+        
+        @keyframes slide-in-right {
+          0% {
+            transform: translateX(1000px);
             opacity: 0;
           }
           100% {
