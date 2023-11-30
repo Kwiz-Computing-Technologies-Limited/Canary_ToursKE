@@ -249,13 +249,13 @@ htmltools::browsable(
 
 ```{r deals, echo=FALSE}
 bslib::card(
-  card_header(
+  card_body(
     htmltools::tags$p(
     "Deals",
     class = "title",
-    style = "font-weight: bold;"
+    style = "font-weight: bold; background-color: rgba(246, 215, 176, 0)"
   )),
-  style = "border: none; background-color: rgba(246, 215, 176, 0)"
+  style = "border: none;"
 )
 
 # Create a tab panels with cards for services offered
